@@ -1,0 +1,209 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #083737;
+  color: #f5f5f3;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(27, 40, 52);
+  color: white;
+  padding: 10px 20px;
+}
+
+nav .img{
+  height: 20px;
+  width: auto;
+}
+
+nav .menu{
+  display: flex;
+  gap: 20px;
+}
+
+nav .menu a{
+  color: rgb(38, 176, 194);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav .menu a:hover{
+  text-decoration: none;
+}
+
+nav .search-bar{
+  display: flex;
+  gap: 12px;
+}
+
+nav .search-bar input{
+  padding: 5px;
+  border: 1px solid #dddcdc;
+  border-radius: 2px;
+}
+
+
+
+nav .search-bar button{
+  padding: 5px 10px;
+  background-color: rgb(34, 145, 160);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+nav .search-bar button:hover{
+  background-color: #0a5575;
+}
+
+
+
+.container{
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
+
+.drink-card{
+  flex: 7;
+  border: 1px solid #484a4a;
+  background-color: rgb(32, 32, 42);
+  padding: 10px;
+  overflow-y: auto;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+}
+
+
+
+.group-card{
+  flex: 3;
+  border: 1px solid #484a4a;
+  background-color: rgb(24, 24, 31);
+  padding: 10px;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+
+.drink{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #494848;
+  background-color: #333333;
+  border-radius: 5px;
+  color: #f5f5f5;
+}
+
+
+.drink img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.drink p{
+  margin: 5px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+.drink button{
+  margin: 5px 0;
+  padding: 5px 10px;
+  background-color: #326e9f;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.drink button:hover{
+  background-color: #1778df;
+}
+
+
+
+#modal{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #004c5f;
+  color: #f5f5f5;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  text-align: center;
+}
+
+
+#modal-overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+
+footer{
+  background-color:rgb(6, 77, 90);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+footer .social-links{
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+
+
+footer .social-links a{
+  color: white;
+
+
+}
+
+
+
+footer .social-links a:hover {
+  color: #ebe5e5;
+}
